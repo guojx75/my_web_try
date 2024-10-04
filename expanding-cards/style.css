@@ -1,0 +1,77 @@
+.zhi-mang-xing-regular {
+    font-family: "Zhi Mang Xing", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: rgba(240, 124, 34, 0.183);
+    font-family: "Zhi Mang Xing", system-ui;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.vertical-text{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    color: #333;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.container{
+    
+    display: flex;
+    width: 80vw;
+}
+
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in;
+}
+
+.panel h3{
+    color :rgba(103, 82, 12, 0.831);
+    font-size: 36px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
