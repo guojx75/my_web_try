@@ -48,10 +48,10 @@ body{
 }
 
 .panel h3{
-    color :rgba(103, 82, 12, 0.831);
-    font-size: 36px;
+    color :rgba(225, 171, 22, 0.881);
+    font-size: 90px;
     position: absolute;
-    bottom: 20px;
+    top: 20px;
     left: 20px;
     margin: 0;
     opacity: 0;
