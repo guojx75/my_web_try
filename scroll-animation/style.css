@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+
+.zhi-mang-xing-regular {
+  font-family: "Zhi Mang Xing", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Zhi Mang Xing", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    justify-content: flex-start;
+    overflow-x: hidden;
+
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h1{
+    font-size: 40px;
+    margin: 50px;
+}
+
+.content{
+    text-align: center;
+    width: 85%;
+    font-size: 36px;
+}
+
+.box{
+    background-color: rgba(255, 235, 205, 0.5);
+    color: #1b1818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 35%;
+    height: 20vh;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+    font-size: 30px;
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-400%);
+}
+
+.box.show{
+    transform: translateX(0);
+}
+
