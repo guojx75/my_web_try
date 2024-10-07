@@ -5,11 +5,10 @@ window.addEventListener('scroll',checkBoxes);
 checkBoxes();
 
 function checkBoxes(){
-    const triggerBottom = window.innerHeight / 5 * 4;
-
+    const triggerBottom = window.innerHeight / 10 * 9;
     boxes.forEach(box => {
         const boxTop = box.getBoundingClientRect().top
-        if(boxTop < triggerBottom){
+        if(boxTop < triggerBottom && boxTop > 0){
             box.classList.add('show');
         }else{
             box.classList.remove('show');

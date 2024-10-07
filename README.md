@@ -5,3 +5,4 @@
 > 目前有
 > - [**扩展卡片**](https://github.com/guojx75/my_web_try/tree/projects/expanding-cards)
 > - [**步骤条**](https://github.com/guojx75/my_web_try/tree/projects/progress-steps)
+> - [**滚动动画**](https://github.com/guojx75/my_web_try/tree/projects/scroll-animation)
